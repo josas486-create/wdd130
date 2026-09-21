@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #0b2545;
+    --secondary-color: #134074;
+    --accent1-color: #1d4ed8;
+    --body-font: "Arial", sans-serif;
+    --heading-font: "Georgia", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--primary-color);
+}
+
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* Header Layout & Navigation Bullet Fix */
+header {
+    width: 840px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+header nav {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+header nav li {
+    list-style: none;
+}
+
+header nav a {
+    text-decoration: underline;
+    color: #1d4ed8;
+    font-weight: normal;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.history,
+.adventure {
+    background-color: var(--accent1-color);
+    color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.history h2,
+.adventure h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.history p {
+    color: #fff;
+}
+
+.socialmedia {
+    text-align: center;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: auto;
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    width: 840px;
+    margin: 0 auto;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--accent1-color);
+    color: #fff;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 16px;
+    background-color: rgba(11, 37, 69, 0.85);
+    color: #fff;
+}
+
+.hero article img {
+    float: right;
+    width: 120px;
+    height: auto;
+    margin-left: 15px;
+}
