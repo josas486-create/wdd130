@@ -1,9 +1,9 @@
 :root {
     --primary-color: #0056b3;
     --secondary-color: #f4f4f4;
-    --accent-color: #333;
+    --accent-color: #333333;
     --white: #ffffff;
-    --shadow-color: rgba(0, 0, 0, 0.1);
+    --shadow-color: #000000;
 }
 
 * {
@@ -23,7 +23,7 @@ header {
     align-items: center;
     padding: 1rem 2rem;
     background-color: var(--secondary-color);
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #dddddd;
 }
 
 header img {
@@ -45,7 +45,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ddd;
+    background-color: #dddddd;
     border-radius: 4px;
 }
 
