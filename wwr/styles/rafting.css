@@ -2,6 +2,8 @@
     --primary-color: #0056b3;
     --secondary-color: #f4f4f4;
     --accent-color: #333;
+    --white: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -102,10 +104,10 @@ nav a:hover {
 
 .adventure-grid figure {
     margin: 0;
-    background: #fff;
+    background: var(--white);
     padding: 0.5rem;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px var(--shadow-color);
 }
 
 .adventure-grid img {
@@ -126,7 +128,7 @@ footer {
     align-items: center;
     padding: 1.5rem 2rem;
     background-color: var(--accent-color);
-    color: #fff;
+    color: var(--white);
 }
 
 footer .socialmedia {
