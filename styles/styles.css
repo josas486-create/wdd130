@@ -57,6 +57,7 @@ h1 {
 main {
     grid-column: 2/3;
     margin: 1rem;
+    max-width:
 }
 
 main img {
