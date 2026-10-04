@@ -50,7 +50,8 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--secondary-color);
+    color: var(--accent2-color);
+    background-color: var(--accent1-color);
 }
 
 h1,
@@ -138,7 +139,7 @@ figure {
 
 figcaption {
     padding: 8px;
-    color: var(--accent2-color);
+    color: var(--accent1-color);
 }
 
 footer {
