@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Contact White Water Rafting Company with questions about our rafting trips and services.">
+    <meta name="author" content="Idahosa Osasere Justice">
+    <title>Contact Us | White Water Rafting Company</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="White Water Rafting Company Logo">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="company-info">
+            <h1>White Water Rafting Company</h1>
+            <p>
+                <strong>123 Main River Street</strong><br>
+                <strong>Kolob, California</strong><br>
+                <strong>+1 999 999 9999</strong><br>
+                <strong>info@whitewater.com</strong>
+            </p>
+        </section>
+
+        <section class="contact-area">
+            <div class="map">
+                <iframe src="https://www.google.com/maps?q=Kolob+Canyons,+Utah&output=embed"
+                  title="Map showing our location" loading="lazy">
+                </iframe>
+            </div>
+
+            <form>
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Placeholder" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Placeholder" required>
+                </div>
+
+                <div class="form-row purpose-row">
+                    <label>Message Purpose</label>
+
+                    <div class="purpose-options">
+                        <label>
+                            <input type="radio" name="purpose" value="general" required>
+                            General Inquiry
+                        </label>
+
+                        <label>
+                            <input type="radio" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
+
+                        <label>
+                            <input type="radio" name="purpose" value="suggestion">
+                            Website Suggestion
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-row message-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Type here"
+                      required></textarea>
+                </div>
+
+                <label class="newsletter">
+                    <input type="checkbox" name="newsletter">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Get in Touch!</button>
+            </form>
+        </section>
+
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+
+            <div class="employee-profiles">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Employee Profile">
+                    <figcaption>Trip Guide</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee2.jpg" alt="Employee Profile">
+                    <figcaption>Reservation Manager</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee3.jpg" alt="Employee Profile">
+                    <figcaption>Customer Service Manager</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2026 | Rapids! | Idahosa Osasere Justice</p>
+
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook Icon">
+            </a>
+
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" alt="LinkedIn Icon">
+            </a>
+
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram Icon">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
