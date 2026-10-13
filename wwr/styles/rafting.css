@@ -298,7 +298,7 @@ h2 {
 
 .hero h1 {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 0;
     width: 100%;
     padding: 15px;
@@ -310,20 +310,20 @@ h2 {
 
 .hero article {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    padding: 15px;
-    background-color: rgb(255 255 255 / 90%);
+    bottom: 12px;
+    left: 15px;
+    right: 15px;
+    padding: 12px;
+    background-color: rgb(255 255 255 / 92%);
     color: #222;
 }
 
 .hero article img {
     float: right;
-    width: 150px;
+    width: 120px;
     height: auto;
     margin-left: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .home-content {
@@ -535,20 +535,21 @@ h2 {
     }
 
     .hero h1 {
+        top: 30%;
         font-size: 22px;
     }
 
     .hero article {
-        left: 10px;
-        right: 10px;
-        bottom: 10px;
-        padding: 10px;
-        font-size: 13px;
+        bottom: 8px;
+        left: 8px;
+        right: 8px;
+        padding: 8px;
+        font-size: 12px;
     }
 
     .hero article img {
-        width: 100px;
-        margin-left: 10px;
+        width: 90px;
+        margin-left: 8px;
     }
 
     .trip-table-section {
