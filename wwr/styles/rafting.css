@@ -22,13 +22,14 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    width: 100%;
+    max-width: 840px;
     margin: 0 auto;
 }
 
 header {
     margin-top: 12px;
-    padding: 14px 90px;
+    padding: 14px 30px;
     display: grid;
     grid-template-columns: 125px 1fr;
     align-items: center;
@@ -57,7 +58,7 @@ nav ul {
 
 header nav a {
     display: block;
-    padding: 6px 28px;
+    padding: 6px 15px;
     background-color: white;
     border: 1px solid #777;
     color: #222;
@@ -175,7 +176,7 @@ textarea {
     display: flex;
     align-items: center;
     gap: 5px;
-    margin: 4px 0 8px 0;
+    margin: 4px 0 8px;
     padding: 0;
     font-size: 13px;
 }
@@ -245,6 +246,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 12px;
     background-color: #d8c8f5;
     border: 1px solid #555;
 }
@@ -272,4 +274,265 @@ footer p {
 .socialmedia img {
     width: 28px;
     height: 28px;
+}
+
+/* Home Page */
+
+.hero {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(38 70 83 / 85%);
+    color: white;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.home-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.home-content h2 {
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.trip-button {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 20px 0;
+    padding: 15px;
+}
+
+.home-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.home-grid h2 {
+    margin: 10px 0;
+}
+
+.home-grid p {
+    line-height: 1.5;
+}
+
+.newsletter-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.newsletter-section h2 {
+    margin-bottom: 10px;
+}
+
+.newsletter-section p {
+    margin-bottom: 15px;
+}
+
+.newsletter-section form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.newsletter-section label {
+    display: block;
+    margin-top: 10px;
+}
+
+.newsletter-section input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #777;
+}
+
+.newsletter-section button {
+    margin-top: 12px;
+    height: auto;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Trips Page */
+
+.trips-intro {
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.trips-intro h1 {
+    margin-bottom: 12px;
+}
+
+.trips-intro p {
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.trip-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin: 20px 0;
+    padding: 15px;
+}
+
+.trip-card {
+    padding: 10px;
+    border: 1px solid #777;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.trip-card h2 {
+    margin: 10px 0;
+    font-size: 19px;
+}
+
+.trip-card p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.trip-table-section {
+    margin: 20px 0;
+    padding: 15px;
+}
+
+.trip-table-section h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.trip-table-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table-section th,
+.trip-table-section td {
+    padding: 10px;
+    border: 1px solid #777;
+    text-align: left;
+}
+
+.trip-table-section th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.trip-table-section tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.trip-contact {
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.trip-contact h2 {
+    margin-bottom: 12px;
+}
+
+.trip-contact p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Smaller Screens */
+
+@media screen and (max-width: 700px) {
+    header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 12px;
+        padding: 14px 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav a {
+        padding: 8px 10px;
+    }
+
+    .contact-area {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trip-list {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .trip-table-section {
+        overflow-x: auto;
+    }
+
+    .trip-table-section table {
+        min-width: 500px;
+    }
+
+    .employee-profiles {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .employee-profiles figure {
+        flex: 1 1 120px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
 }
